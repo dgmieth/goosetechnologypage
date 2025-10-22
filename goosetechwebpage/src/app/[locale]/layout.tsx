@@ -15,9 +15,11 @@ export const generateStaticParams = () => {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ locale: Locale }>
+  // Accept the runtime shape (strings) and narrow to Locale after awaiting.
+  params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
+  const loc = locale as Locale
   const descriptions: Record<Locale, string> = {
     'pt-br': 'Site multilíngue otimizado para SEO',
     'en-us': 'Multilingual SEO-optimized website',
@@ -27,9 +29,9 @@ export async function generateMetadata({
 
   return {
     title: 'Your Company',
-    description: descriptions[locale],
+    description: descriptions[loc],
     openGraph: {
-      locale: locale.replace('-', '_'),
+      locale: loc.replace('-', '_'),
     },
     // Provide per-locale alternates and icons via the Metadata API so we don't
     // need to render <head> inside this layout (root layout owns the html/head/body).
@@ -57,18 +59,19 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode
-  params: Promise<{ locale: Locale }>
+  params: { locale: string } | Promise<{ locale: string }>
 }) {
   const { locale } = await params
+  const loc = locale as Locale
 
-  if (!Object.keys(translations).includes(locale)) {
+  if (!Object.keys(translations).includes(loc)) {
     notFound()
   }
   return (
     <>
-      <Navigation locale={locale} />
+      <Navigation locale={loc} />
       <main>{children}</main>
-      <Footer locale={locale} />
+      <Footer locale={loc} />
     </>
   )
 }
