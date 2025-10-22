@@ -31,6 +31,24 @@ export async function generateMetadata({
     openGraph: {
       locale: locale.replace('-', '_'),
     },
+    // Provide per-locale alternates and icons via the Metadata API so we don't
+    // need to render <head> inside this layout (root layout owns the html/head/body).
+    alternates: {
+      canonical: `https://example.com/${locale}`,
+      languages: {
+        'pt-BR': 'https://example.com/pt-br',
+        'en-US': 'https://example.com/en-us',
+        'fr-CA': 'https://example.com/fr-ca',
+        'es-MX': 'https://example.com/es-mx',
+      },
+    },
+    icons: {
+      icon: [
+        { url: '/favicon.ico' },
+        { url: '/favicon.svg', type: 'image/svg+xml' },
+      ],
+      apple: '/apple-touch-icon.png',
+    },
   }
 }
 
@@ -46,25 +64,11 @@ export default async function LocaleLayout({
   if (!Object.keys(translations).includes(locale)) {
     notFound()
   }
-
   return (
-    <html lang={locale}>
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={`https://example.com/${locale}`} />
-        <link rel="alternate" hrefLang="pt-BR" href="https://example.com/pt-br" />
-        <link rel="alternate" hrefLang="en-US" href="https://example.com/en-us" />
-        <link rel="alternate" hrefLang="fr-CA" href="https://example.com/fr-ca" />
-        <link rel="alternate" hrefLang="es-MX" href="https://example.com/es-mx" />
-        <link rel="alternate" hrefLang="x-default" href="https://example.com/en-us" />
-      </head>
-      <body>
-        <Navigation locale={locale} />
-        <main>{children}</main>
-        <Footer locale={locale} />
-      </body>
-    </html>
+    <>
+      <Navigation locale={locale} />
+      <main>{children}</main>
+      <Footer locale={locale} />
+    </>
   )
 }

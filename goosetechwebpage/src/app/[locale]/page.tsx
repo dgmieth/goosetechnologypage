@@ -27,12 +27,25 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
   const t = getTranslation(locale)
 
   return (
-    <section className="hero">
-      <h1>{t.home.title}</h1>
-      <p>{t.home.description}</p>
-      <Link href={`/${locale}/products`} className="btn">
-        {t.home.cta}
-      </Link>
-    </section>
+    <div className="hero">
+      <div className="hero-inner">
+        <div className="hero-copy">
+          <h1 className="hero-title">{t.home.headline}</h1>
+          <p className="hero-lead">{t.home.lead}</p>
+
+          <div className="hero-story">
+            <p>{t.home.story}</p>
+            <p className="muted">{t.home.features}</p>
+            <p className="hero-mission">{t.home.mission}</p>
+          </div>
+
+          <div className="hero-cta">
+            <Link href={`/${locale}/products`} className="btn">
+              {t.home.cta}
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }

@@ -1,0 +1,24 @@
+version: '3'
+networks:
+    lmmNetwork:
+        # external:
+        name: lmmNetwork
+services:
+  site_lmm_prod:
+      image: dgmieth/sitelmm:latest
+      ports:
+        - "9031:9031"
+      networks:
+        - lmmNetwork
+      deploy:
+        replicas: 1
+        restart_policy:
+          condition: on-failure
+        resources:
+          limits:
+            memory: 80M
+
+#START COMMAND
+#docker stack deploy --compose-file docker_compose_path_file_name.yml stack_name
+
+#docker stack deploy --compose-file ./docker-compose.yml siteLMM
