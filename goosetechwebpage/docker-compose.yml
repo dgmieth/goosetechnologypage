@@ -7,7 +7,7 @@ services:
   site_lmm_prod:
       image: dgmieth/sitegoosetech_dev:latest
       ports:
-        - "2024:2024"
+        - "2025:2024"
       networks:
         - gooseTechNetwork
       deploy:
