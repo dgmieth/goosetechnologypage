@@ -1,6 +1,7 @@
  'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Locale, getTranslation } from '@/lib/translations'
 import { useEffect, useState } from 'react'
@@ -49,7 +50,7 @@ export default function Navigation({ locale }: { locale: Locale }) {
       <div className="nav-container">
         {/* Logo */}
         <Link href={`/${locale}`} className="logo">
-          <img src="/logo.png" alt="Goose Technology" className="logo-image" />
+          <Image src="/logo.png" alt="Goose Technology" className="logo-image" width={160} height={40} priority />
           <span className="logo-text">Goose Technology</span>
         </Link>
 

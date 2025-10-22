@@ -2,14 +2,14 @@ version: '3'
 networks:
     lmmNetwork:
         # external:
-        name: lmmNetwork
+        name: gooseTechNetwork
 services:
   site_lmm_prod:
-      image: dgmieth/sitelmm:latest
+      image: dgmieth/sitegoosetech_dev:latest
       ports:
-        - "9031:9031"
+        - "2024:2024"
       networks:
-        - lmmNetwork
+        - gooseTechNetwork
       deploy:
         replicas: 1
         restart_policy:
@@ -21,4 +21,4 @@ services:
 #START COMMAND
 #docker stack deploy --compose-file docker_compose_path_file_name.yml stack_name
 
-#docker stack deploy --compose-file ./docker-compose.yml siteLMM
+#docker stack deploy --compose-file ./docker-compose.yml siteGooseTech

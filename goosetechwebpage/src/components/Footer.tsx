@@ -1,5 +1,6 @@
 // src/components/Footer.tsx
 import Link from 'next/link'
+import Image from 'next/image'
 import { Locale, getTranslation } from '@/lib/translations'
 import { products } from '@/lib/products'
 
@@ -18,7 +19,7 @@ export default function Footer({ locale }: { locale: Locale }) {
       <div className="footer-container">
         <div className="footer-brand">
           {/* white logo: file provided as /whiteLogo.png */}
-          <img src="/whiteLogo.png" alt="Goose Technology" className="footer-logo" />
+          <Image src="/whiteLogo.png" alt="Goose Technology" className="footer-logo" width={220} height={140} priority />
         </div>
 
         <div className="footer-content">

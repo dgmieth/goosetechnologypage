@@ -19,4 +19,4 @@ USER node
 CMD ["npm", "start"]
 
 #docker build -t dgmieth/sitegoosetech_dev -f ./dev.Dockerfile .
-#docker run -d -p 2024:2025 dgmieth/sitegoosetech_dev
+#docker run -d -p 2024:2024 dgmieth/sitegoosetech_dev

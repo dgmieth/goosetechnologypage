@@ -18,5 +18,5 @@ EXPOSE 2025
 USER node
 CMD ["npm", "start"]
 
-#docker build -t dgmieth/sitegoosetech_dev .
-#docker run -d -p 2025:2025 dgmieth/sitegoosetech_dev
+#docker build -t dgmieth/sitegoosetech .
+#docker run -d -p 2025:2025 dgmieth/sitegoosetech
