@@ -335,7 +335,6 @@ a {
   display: none;
   background: white;
   border-top: 1px solid var(--border-color);
-  padding: 1rem 0;
   animation: slideDown 0.3s ease;
   position: absolute; /* overlay the page content */
   top: 100%; /* position right below the navbar container */
@@ -343,6 +342,11 @@ a {
   right: 0;
   z-index: 1200; /* above the navbar */
   box-shadow: 0 8px 24px rgba(2,6,23,0.08);
+  
+  /* Max height com scroll */
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mobile-nav-list {
