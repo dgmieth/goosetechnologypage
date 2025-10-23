@@ -768,9 +768,16 @@ main {
 /* Products Grid */
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 2rem;
+  max-width: 100%;
+}
+
+.product-card-link {
+  text-decoration: none;
+  color: inherit;
+  width: fit-content;
 }
 
 .product-card {
@@ -780,6 +787,7 @@ main {
   box-shadow: var(--shadow-md);
   transition: all 0.3s ease;
   border: 1px solid transparent;
+  width: fit-content;
 }
 
 .product-card:hover {
@@ -804,27 +812,55 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.product-links {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.product-link {
-  padding: 0.5rem 1rem;
-  background: var(--bg-light);
+/* Product Detail Page */
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
   color: var(--primary-color);
-  border-radius: 4px;
-  transition: all 0.3s ease;
-  font-size: 0.9rem;
   font-weight: 500;
-  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
 }
 
-.product-link:hover {
-  background: var(--primary-color);
-  color: white;
-  border-color: var(--primary-color);
+.back-link:hover {
+  transform: translateX(-4px);
+}
+
+.product-detail {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.product-detail-icon {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.product-detail h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-detail-description {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-detail-content {
+  background: var(--bg-light);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Legal Content */
@@ -1068,7 +1104,7 @@ main {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   /* Show mobile menu */
   .desktop-only {
     display: none !important;
@@ -1118,13 +1154,12 @@ main {
     grid-template-columns: 1fr;
   }
 
-  .product-links {
-    flex-direction: column;
+  .product-card-link {
+    width: 100%;
   }
 
-  .product-link {
+  .product-card {
     width: 100%;
-    text-align: center;
   }
 
   .footer-container {

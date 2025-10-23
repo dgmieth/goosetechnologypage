@@ -63,9 +63,7 @@ export const translations = {
     },
     products: {
       title: 'Aplicativos',
-      description: 'Descubra nossos aplicativos incríveis',
-      privacy: 'Privacidade',
-      terms: 'Termos de Serviço'
+      description: 'Descubra nossos aplicativos incríveis'
     },
     contact: {
       title: 'Entre em Contato',
@@ -150,9 +148,7 @@ export const translations = {
     },
     products: {
       title: 'Apps',
-      description: 'Discover our amazing apps',
-      privacy: 'Privacy',
-      terms: 'Terms of Service'
+      description: 'Discover our amazing apps'
     },
     contact: {
       title: 'Get in Touch',
@@ -237,9 +233,7 @@ export const translations = {
     },
     products: {
       title: 'Applications',
-      description: 'Découvrez nos applications fantastiques',
-      privacy: 'Confidentialité',
-      terms: 'Conditions d\'utilisation'
+      description: 'Découvrez nos applications fantastiques'
     },
     contact: {
       title: 'Nous Contacter',
@@ -324,9 +318,7 @@ export const translations = {
     },
     products: {
       title: 'Aplicaciones',
-      description: 'Descubre nuestras aplicaciones increíbles',
-      privacy: 'Privacidad',
-      terms: 'Términos de Servicio'
+      description: 'Descubre nuestras aplicaciones increíbles'
     },
     contact: {
       title: 'Contáctanos',
@@ -389,8 +381,6 @@ export interface Translations {
   products: {
     title: string;
     description: string;
-    privacy: string;
-    terms: string;
   };
   contact: {
     title: string;

@@ -1,8 +1,6 @@
 // src/components/Footer.tsx
-import Link from 'next/link'
 import Image from 'next/image'
 import { Locale, getTranslation } from '@/lib/translations'
-import { products } from '@/lib/products'
 
 // Import package.json to show app version in the footer (server component)
 import pkg from '../../package.json'
@@ -23,30 +21,7 @@ export default function Footer({ locale }: { locale: Locale }) {
         </div>
 
         <div className="footer-content">
-          <div className="footer-section">
-            <h3>{t.footer.privacy}</h3>
-            <ul>
-              {products.map((product) => (
-                <li key={product.id}>
-                  <Link href={`/${locale}/products/${product.id}/privacy`}>
-                    {product.name} - {t.footer.privacy}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h3>{t.footer.terms}</h3>
-            <ul>
-              {products.map((product) => (
-                <li key={product.id}>
-                  <Link href={`/${locale}/products/${product.id}/terms`}>
-                    {product.name} - {t.footer.terms}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Footer content is intentionally minimal now */}
         </div>
       </div>
 
