@@ -4,7 +4,7 @@ export const translations = {
     nav: {
       home: 'Início',
       about: 'Sobre Nós',
-      products: 'Produtos',
+      products: 'Aplicativos',
       contact: 'Contato',
       language: 'Idioma',
     },
@@ -17,8 +17,8 @@ export const translations = {
     },
     home: {
       title: 'Goose Tecnologia',
-      description: 'Descubra nossos produtos incríveis',
-      cta: 'Explorar Produtos',
+      description: 'Descubra nossos aplicativos incríveis',
+      cta: 'Explorar Aplicativos',
       headline: 'Aplicativos que fazem você voar mais alto.',
       lead: 'Na Goose, acreditamos que tecnologia boa é aquela que melhora a vida de verdade — economiza tempo, simplifica o dia a dia e traz mais liberdade.',
       story: 'Assim como o ganso que migra em busca de melhores condições, criamos aplicativos que ajudam você a migrar para uma vida melhor.',
@@ -62,8 +62,8 @@ export const translations = {
       ]
     },
     products: {
-      title: 'Produtos',
-      description: 'Descubra nossos produtos incríveis',
+      title: 'Aplicativos',
+      description: 'Descubra nossos aplicativos incríveis',
       privacy: 'Privacidade',
       terms: 'Termos de Serviço'
     },
@@ -91,7 +91,7 @@ export const translations = {
     nav: {
       home: 'Home',
       about: 'About Us',
-      products: 'Products',
+      products: 'Apps',
       contact: 'Contact',
       language: 'Language',
     },
@@ -104,8 +104,8 @@ export const translations = {
     },
     home: {
       title: 'Goose Technology',
-      description: 'Discover our amazing products',
-      cta: 'Explore Products',
+      description: 'Discover our amazing apps',
+      cta: 'Explore Apps',
       headline: 'Apps that help you fly higher.',
       lead: 'At Goose, we believe that good technology truly improves life — it saves time, simplifies your day, and gives you more freedom.',
       story: 'Just like the goose that migrates in search of better conditions, we build apps that help you migrate toward a better life.',
@@ -149,8 +149,8 @@ export const translations = {
       ]
     },
     products: {
-      title: 'Products',
-      description: 'Discover our amazing products',
+      title: 'Apps',
+      description: 'Discover our amazing apps',
       privacy: 'Privacy',
       terms: 'Terms of Service'
     },
@@ -178,7 +178,7 @@ export const translations = {
     nav: {
       home: 'Accueil',
       about: 'À Propos',
-      products: 'Produits',
+      products: 'Applications',
       contact: 'Contact',
       language: 'Langue',
     },
@@ -191,8 +191,8 @@ export const translations = {
     },
     home: {
       title: 'Goose Technologie',
-      description: 'Découvrez nos produits fantastiques',
-      cta: 'Explorer les Produits',
+      description: 'Découvrez nos applications fantastiques',
+      cta: 'Explorer les Applications',
       headline: 'Des applications qui vous font voler plus haut.',
       lead: 'Chez Goose, nous croyons qu’une bonne technologie est celle qui améliore vraiment la vie — elle fait gagner du temps, simplifie le quotidien et offre plus de liberté.',
       story: 'Comme l’oie qui migre à la recherche de meilleures conditions, nous créons des applications qui vous aident à migrer vers une vie meilleure.',
@@ -236,8 +236,8 @@ export const translations = {
       ]
     },
     products: {
-      title: 'Produits',
-      description: 'Découvrez nos produits fantastiques',
+      title: 'Applications',
+      description: 'Découvrez nos applications fantastiques',
       privacy: 'Confidentialité',
       terms: 'Conditions d\'utilisation'
     },
@@ -265,7 +265,7 @@ export const translations = {
     nav: {
       home: 'Inicio',
       about: 'Acerca de',
-      products: 'Productos',
+      products: 'Aplicaciones',
       contact: 'Contacto',
       language: 'Idioma',
     },
@@ -278,8 +278,8 @@ export const translations = {
     },
     home: {
       title: 'Goose Tecnología',
-      description: 'Descubre nuestros productos increíbles',
-      cta: 'Explorar Productos',
+      description: 'Descubre nuestras aplicaciones increíbles',
+      cta: 'Explorar Aplicaciones',
       headline: 'Aplicaciones que te hacen volar más alto.',
       lead: 'En Goose, creemos que la buena tecnología es la que realmente mejora la vida — ahorra tiempo, simplifica el día a día y brinda más libertad.',
       story: 'Como el ganso que migra en busca de mejores condiciones, creamos aplicaciones que te ayudan a migrar hacia una vida mejor.',
@@ -323,8 +323,8 @@ export const translations = {
       ]
     },
     products: {
-      title: 'Productos',
-      description: 'Descubre nuestros productos increíbles',
+      title: 'Aplicaciones',
+      description: 'Descubre nuestras aplicaciones increíbles',
       privacy: 'Privacidad',
       terms: 'Términos de Servicio'
     },
