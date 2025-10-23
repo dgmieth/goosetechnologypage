@@ -1,4 +1,4 @@
- 'use client'
+'use client'
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -138,7 +138,7 @@ function LanguageOption({
   currentLocale: Locale
   onClick?: () => void
 }) {
-  const languages = {
+  const languages: Record<Locale, string> = {
     'pt-br': 'Português',
     'en-us': 'English',
     'fr-ca': 'Français',

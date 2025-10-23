@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import { Locale, getTranslation } from '@/lib/translations'
 import { products } from '@/lib/products'
 import ProductCard from '@/components/ProductCard'
+import { translations } from '@/lib/translations';
 
 export async function generateMetadata({
   params,

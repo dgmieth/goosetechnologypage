@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import { Locale, getTranslation } from '@/lib/translations'
 import { products } from '@/lib/products'
 import { notFound } from 'next/navigation'
+import { translations } from '@/lib/translations';
 
 export async function generateStaticParams() {
   const locales: Locale[] = ['pt-br', 'en-us', 'fr-ca', 'es-mx']

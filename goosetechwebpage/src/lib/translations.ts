@@ -29,17 +29,42 @@ export const translations = {
       message: 'A página que você está procurando não existe ou foi movida.',
       cta: 'Voltar ao Início',
     },
-    about: {
-      title: 'Sobre Nós',
-      description: 'Conheça nossa história e missão',
-      content: 'Somos uma empresa dedicada a fornecer soluções inovadoras para o mercado brasileiro e internacional. Nossa missão é transformar ideias em realidade através da tecnologia.',
+    aboutUs: {
+      ourStory: {
+        title: 'Nossa história',
+        content: [
+          'A Goose nasceu em Montreal, a partir do encontro de dois imigrantes que chegaram aqui em 2022 em busca de novas oportunidades e de um recomeço.',
+          'Entre conversas, ideias e afinidades, descobriram que suas experiências e habilidades se completavam — e que, juntos, poderiam criar algo capaz de facilitar a vida de muitas pessoas.',
+          'Assim surgiu a Goose: inspirada pelo movimento, pela adaptação e pela busca constante por melhores caminhos — valores que também vivem no símbolo que escolhemos para nos representar.'
+        ]
+      },
+      ourMission: {
+        title: 'Missão',
+        content: [
+          'Criar tecnologia que realmente faça diferença na vida das pessoas — economizando tempo, simplificando o cotidiano e trazendo mais liberdade.',
+          'Cada aplicativo da Goose nasce com propósito: ajudar você a migrar para uma vida melhor, mais leve e conectada com o que importa.'
+        ]
+      },
+      ourVision: {
+        title: 'Visão',
+        content: [
+          'Transformar a forma como as pessoas se relacionam com a tecnologia, tornando-a mais humana, acessível e significativa.',
+          'Queremos ser lembrados como uma empresa que cria ferramentas que melhoram o dia a dia de verdade.'
+        ]
+      },
+      ourValues: [
+        { valueName: 'Simplicidade', value: 'menos complicação, mais clareza.' },
+        { valueName: 'Propósito', value: 'cada app deve ter um impacto real.' },
+        { valueName: 'Liberdade', value: 'tecnologia que devolve tempo e autonomia.' },
+        { valueName: 'Evolução constante', value: 'aprendemos e melhoramos a cada passo.' },
+        { valueName: 'Empatia e transparência', value: 'criamos com e para pessoas.' }
+      ]
     },
     products: {
-      title: 'Nossos Produtos',
-      description: 'Conheça nossa linha completa de produtos',
-      viewDetails: 'Ver Detalhes',
+      title: 'Produtos',
+      description: 'Descubra nossos produtos incríveis',
       privacy: 'Privacidade',
-      terms: 'Termos',
+      terms: 'Termos de Serviço'
     },
   },
   'en-us': {
@@ -71,17 +96,42 @@ export const translations = {
       message: 'The page you are looking for doesn\'t exist or has been moved.',
       cta: 'Back to Home',
     },
-    about: {
-      title: 'About Us',
-      description: 'Learn our story and mission',
-      content: 'We are a company dedicated to providing innovative solutions for the market. Our mission is to transform ideas into reality through technology.',
+    aboutUs: {
+      ourStory: {
+        title: 'Our Story',
+        content: [
+          'Goose was born in Montreal from the meeting of two immigrants who arrived here in 2022 in search of new opportunities and a fresh start.',
+          'Through conversations, ideas, and affinities, they discovered that their experiences and skills complemented each other — and that together, they could create something capable of making life easier for many people.',
+          'Thus, Goose was born: inspired by movement, adaptation, and the constant search for better paths — values that also live in the symbol we chose to represent us.'
+        ]
+      },
+      ourMission: {
+        title: 'Mission',
+        content: [
+          'To create technology that truly makes a difference in people’s lives — saving time, simplifying daily life, and bringing more freedom.',
+          'Every Goose app is born with a purpose: to help you migrate to a better, lighter life connected to what matters.'
+        ]
+      },
+      ourVision: {
+        title: 'Vision',
+        content: [
+          'To transform the way people relate to technology, making it more human, accessible, and meaningful.',
+          'We want to be remembered as a company that creates tools that genuinely improve daily life.'
+        ]
+      },
+      ourValues: [
+        { valueName: 'Simplicity', value: 'less complication, more clarity.' },
+        { valueName: 'Purpose', value: 'every app should have a real impact.' },
+        { valueName: 'Freedom', value: 'technology that gives back time and autonomy.' },
+        { valueName: 'Constant Evolution', value: 'we learn and improve with every step.' },
+        { valueName: 'Empathy and Transparency', value: 'we create with and for people.' }
+      ]
     },
     products: {
-      title: 'Our Products',
-      description: 'Discover our complete product line',
-      viewDetails: 'View Details',
+      title: 'Products',
+      description: 'Discover our amazing products',
       privacy: 'Privacy',
-      terms: 'Terms',
+      terms: 'Terms of Service'
     },
   },
   'fr-ca': {
@@ -113,17 +163,42 @@ export const translations = {
       message: 'La page que vous recherchez n\'existe pas ou a été déplacée.',
       cta: 'Retour à l\'accueil',
     },
-    about: {
-      title: 'À Propos de Nous',
-      description: 'Découvrez notre histoire et notre mission',
-      content: 'Nous sommes une entreprise dédiée à fournir des solutions innovantes pour le marché. Notre mission est de transformer les idées en réalité grâce à la technologie.',
+    aboutUs: {
+      ourStory: {
+        title: 'Notre histoire',
+        content: [
+          'Goose est née à Montréal de la rencontre de deux immigrants arrivés ici en 2022 à la recherche de nouvelles opportunités et d’un nouveau départ.',
+          'À travers des conversations, des idées et des affinités, ils ont découvert que leurs expériences et compétences se complétaient — et qu’ensemble, ils pouvaient créer quelque chose capable de faciliter la vie de nombreuses personnes.',
+          'Ainsi, Goose est née : inspirée par le mouvement, l’adaptation et la recherche constante de meilleurs chemins — des valeurs qui vivent également dans le symbole que nous avons choisi pour nous représenter.'
+        ]
+      },
+      ourMission: {
+        title: 'Mission',
+        content: [
+          'Créer une technologie qui fait vraiment une différence dans la vie des gens — en économisant du temps, en simplifiant le quotidien et en apportant plus de liberté.',
+          'Chaque application Goose naît avec un objectif : vous aider à migrer vers une vie meilleure, plus légère et connectée à ce qui compte.'
+        ]
+      },
+      ourVision: {
+        title: 'Vision',
+        content: [
+          'Transformer la façon dont les gens se rapportent à la technologie, en la rendant plus humaine, accessible et significative.',
+          'Nous voulons être rappelés comme une entreprise qui crée des outils qui améliorent vraiment le quotidien.'
+        ]
+      },
+      ourValues: [
+        { valueName: 'Simplicité', value: 'moins de complications, plus de clarté.' },
+        { valueName: 'Objectif', value: 'chaque application doit avoir un impact réel.' },
+        { valueName: 'Liberté', value: 'une technologie qui redonne du temps et de l’autonomie.' },
+        { valueName: 'Évolution constante', value: 'nous apprenons et nous améliorons à chaque étape.' },
+        { valueName: 'Empathie et transparence', value: 'nous créons avec et pour les gens.' }
+      ]
     },
     products: {
-      title: 'Nos Produits',
-      description: 'Découvrez notre gamme complète de produits',
-      viewDetails: 'Voir les Détails',
+      title: 'Produits',
+      description: 'Découvrez nos produits fantastiques',
       privacy: 'Confidentialité',
-      terms: 'Conditions',
+      terms: 'Conditions d\'utilisation'
     },
   },
   'es-mx': {
@@ -155,17 +230,42 @@ export const translations = {
       message: 'La página que buscas no existe o ha sido movida.',
       cta: 'Volver al inicio',
     },
-    about: {
-      title: 'Acerca de Nosotros',
-      description: 'Conozca nuestra historia y misión',
-      content: 'Somos una empresa dedicada a proporcionar soluciones innovadoras para el mercado. Nuestra misión es transformar ideas en realidad a través de la tecnología.',
+    aboutUs: {
+      ourStory: {
+        title: 'Nuestra historia',
+        content: [
+          'Goose nació en Montreal del encuentro de dos imigrantes que llegaron aquí en 2022 en busca de nuevas oportunidades y un nuevo comienzo.',
+          'A través de conversaciones, ideas y afinidades, descubrieron que sus experiencias y habilidades se complementaban — y que juntos, podían crear algo capaz de facilitar la vida de muchas personas.',
+          'Así nació Goose: inspirada por el movimiento, la adaptación y la búsqueda constante de mejores caminos — valores que también viven en el símbolo que elegimos para representarnos.'
+        ]
+      },
+      ourMission: {
+        title: 'Misión',
+        content: [
+          'Crear tecnología que realmente haga una diferencia en la vida de las personas — ahorrando tiempo, simplificando la vida cotidiana y trayendo más libertad.',
+          'Cada aplicación de Goose nace con un propósito: ayudarte a migrar hacia una vida mejor, más ligera y conectada con lo que importa.'
+        ]
+      },
+      ourVision: {
+        title: 'Visión',
+        content: [
+          'Transformar la forma en que las personas se relacionan con la tecnología, haciéndola más humana, accesible y significativa.',
+          'Queremos ser recordados como una empresa que crea herramientas que realmente mejoran el día a día.'
+        ]
+      },
+      ourValues: [
+        { valueName: 'Simplicidad', value: 'menos complicação, mais clareza.' },
+        { valueName: 'Propósito', value: 'cada aplicação deve ter um impacto real.' },
+        { valueName: 'Libertad', value: 'tecnología que devuelve tiempo e autonomia.' },
+        { valueName: 'Evolução constante', value: 'aprendemos e melhoramos com cada passo.' },
+        { valueName: 'Empatía y transparencia', value: 'creamos con y para las personas.' }
+      ]
     },
     products: {
-      title: 'Nuestros Productos',
-      description: 'Descubre nuestra línea completa de productos',
-      viewDetails: 'Ver Detalles',
+      title: 'Productos',
+      description: 'Descubre nuestros productos increíbles',
       privacy: 'Privacidad',
-      terms: 'Términos',
+      terms: 'Términos de Servicio'
     },
   },
 } as const
@@ -174,4 +274,41 @@ export type Locale = keyof typeof translations
 
 export function getTranslation(locale: Locale) {
   return translations[locale] || translations['en-us']
+}
+
+export interface Translations {
+  nav: {
+    home: string;
+    about: string;
+    products: string;
+    language: string;
+  };
+  footer: {
+    privacy: string;
+    terms: string;
+    copyright: string;
+    proudlyCanadian: string;
+    versionLabel: string;
+  };
+  home: {
+    title: string;
+    description: string;
+    cta: string;
+    headline: string;
+    lead: string;
+    story: string;
+    features: string;
+    mission: string;
+  };
+  notFound: {
+    title: string;
+    message: string;
+    cta: string;
+  };
+  products: {
+    title: string;
+    description: string;
+    privacy: string;
+    terms: string;
+  };
 }

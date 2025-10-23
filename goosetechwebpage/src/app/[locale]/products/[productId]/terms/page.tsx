@@ -1,6 +1,6 @@
 // src/app/[locale]/products/[productId]/terms/page.tsx
 import { Metadata } from 'next'
-import { Locale, getTranslation } from '@/lib/translations'
+import { Locale, getTranslation, translations } from '@/lib/translations'
 import { products } from '@/lib/products'
 import { notFound } from 'next/navigation'
 
@@ -48,7 +48,7 @@ export default async function TermsOfService({
 
   const t = getTranslation(locale)
 
-  const termsTexts = {
+  const termsTexts: Record<Locale, string> = {
     'pt-br': `Termos de Serviço de ${product.name}
 
 Última atualização: 2024
@@ -175,7 +175,7 @@ Estos términos se rigen por las leyes mexicanas.`,
     <section className="page-content">
       <h1>{t.products.terms} - {product.name}</h1>
       <div className="legal-content">
-        {termsTexts[locale].split('\n\n').map((paragraph, i) => (
+        {termsTexts[locale].split('\n\n').map((paragraph: string, i: number) => (
           <p key={i}>{paragraph}</p>
         ))}
       </div>
