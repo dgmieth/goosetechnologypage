@@ -65,6 +65,9 @@ export default function Navigation({ locale }: { locale: Locale }) {
           <li>
             <Link href={`/${locale}/products`} className={pathname?.startsWith(`/${locale}/products`) ? 'active' : ''}>{t.nav.products}</Link>
           </li>
+          <li>
+            <Link href={`/${locale}/contact`} className={pathname === `/${locale}/contact` ? 'active' : ''}>{t.nav.contact}</Link>
+          </li>
         </ul>
 
         {/* Desktop Language Dropdown */}
@@ -113,6 +116,9 @@ export default function Navigation({ locale }: { locale: Locale }) {
             </li>
             <li>
               <Link href={`/${locale}/products`} onClick={toggleMenu} className={pathname?.startsWith(`/${locale}/products`) ? 'active' : ''}>{t.nav.products}</Link>
+            </li>
+            <li>
+              <Link href={`/${locale}/contact`} onClick={toggleMenu} className={pathname === `/${locale}/contact` ? 'active' : ''}>{t.nav.contact}</Link>
             </li>
           </ul>
           

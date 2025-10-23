@@ -5,6 +5,7 @@ export const translations = {
       home: 'Início',
       about: 'Sobre Nós',
       products: 'Produtos',
+      contact: 'Contato',
       language: 'Idioma',
     },
     footer: {
@@ -66,12 +67,32 @@ export const translations = {
       privacy: 'Privacidade',
       terms: 'Termos de Serviço'
     },
+    contact: {
+      title: 'Entre em Contato',
+      description: 'Gostaríamos de ouvir você!',
+      form: {
+        name: 'Nome',
+        email: 'Email',
+        subject: 'Assunto',
+        message: 'Mensagem',
+        submit: 'Enviar',
+        sending: 'Enviando...',
+        success: 'Mensagem enviada com sucesso!',
+        error: 'Erro ao enviar mensagem. Tente novamente.'
+      },
+      info: {
+        email: 'Email',
+        phone: 'Telefone',
+        location: 'Localização'
+      }
+    },
   },
   'en-us': {
     nav: {
       home: 'Home',
       about: 'About Us',
       products: 'Products',
+      contact: 'Contact',
       language: 'Language',
     },
     footer: {
@@ -133,12 +154,32 @@ export const translations = {
       privacy: 'Privacy',
       terms: 'Terms of Service'
     },
+    contact: {
+      title: 'Get in Touch',
+      description: 'We\'d love to hear from you!',
+      form: {
+        name: 'Name',
+        email: 'Email',
+        subject: 'Subject',
+        message: 'Message',
+        submit: 'Send',
+        sending: 'Sending...',
+        success: 'Message sent successfully!',
+        error: 'Error sending message. Please try again.'
+      },
+      info: {
+        email: 'Email',
+        phone: 'Phone',
+        location: 'Location'
+      }
+    },
   },
   'fr-ca': {
     nav: {
       home: 'Accueil',
       about: 'À Propos',
       products: 'Produits',
+      contact: 'Contact',
       language: 'Langue',
     },
     footer: {
@@ -200,12 +241,32 @@ export const translations = {
       privacy: 'Confidentialité',
       terms: 'Conditions d\'utilisation'
     },
+    contact: {
+      title: 'Nous Contacter',
+      description: 'Nous aimerions vous entendre!',
+      form: {
+        name: 'Nom',
+        email: 'Email',
+        subject: 'Sujet',
+        message: 'Message',
+        submit: 'Envoyer',
+        sending: 'Envoi en cours...',
+        success: 'Message envoyé avec succès!',
+        error: 'Erreur lors de l\'envoi du message. Réessayez.'
+      },
+      info: {
+        email: 'Email',
+        phone: 'Téléphone',
+        location: 'Localisation'
+      }
+    },
   },
   'es-mx': {
     nav: {
       home: 'Inicio',
       about: 'Acerca de',
       products: 'Productos',
+      contact: 'Contacto',
       language: 'Idioma',
     },
     footer: {
@@ -267,6 +328,25 @@ export const translations = {
       privacy: 'Privacidad',
       terms: 'Términos de Servicio'
     },
+    contact: {
+      title: 'Contáctanos',
+      description: '¡Nos encantaría escucharte!',
+      form: {
+        name: 'Nombre',
+        email: 'Email',
+        subject: 'Asunto',
+        message: 'Mensaje',
+        submit: 'Enviar',
+        sending: 'Enviando...',
+        success: '¡Mensaje enviado con éxito!',
+        error: 'Error al enviar el mensaje. Intenta de nuevo.'
+      },
+      info: {
+        email: 'Email',
+        phone: 'Teléfono',
+        location: 'Ubicación'
+      }
+    },
   },
 } as const
 
@@ -281,6 +361,7 @@ export interface Translations {
     home: string;
     about: string;
     products: string;
+    contact: string;
     language: string;
   };
   footer: {
@@ -310,5 +391,24 @@ export interface Translations {
     description: string;
     privacy: string;
     terms: string;
+  };
+  contact: {
+    title: string;
+    description: string;
+    form: {
+      name: string;
+      email: string;
+      subject: string;
+      message: string;
+      submit: string;
+      sending: string;
+      success: string;
+      error: string;
+    };
+    info: {
+      email: string;
+      phone: string;
+      location: string;
+    };
   };
 }
