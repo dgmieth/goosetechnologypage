@@ -10,7 +10,16 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product, locale }: ProductCardProps) {
-  const imageUrl = `/${product.id}_AppCover.png`
+  // Map locale to language code for image
+  const languageMap: Record<Locale, string> = {
+    'pt-br': 'pt',
+    'en-us': 'en',
+    'fr-ca': 'fr',
+    'es-mx': 'sp',
+  }
+
+  const language = languageMap[locale]
+  const imageUrl = `/${product.id}_AppCover_${language}.png`
 
   return (
     <Link href={`/${locale}/products/${product.id}`} className="product-card-link">
