@@ -10,7 +10,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: Locale; productId: string }>
 }): Promise<Metadata> {
-  const { locale, productId } = await params
+  const { productId } = await params
   const product = products.find((p) => p.id === productId)
 
   if (!product) {

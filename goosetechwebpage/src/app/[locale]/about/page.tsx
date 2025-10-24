@@ -25,7 +25,7 @@ export default function About() {
           />
           <div className="hero-overlay"></div>
           <div className="hero-content">
-            <h1>{t.aboutUs.pageTitle}</h1>
+            <h1>About Goose</h1>
           </div>
         </div>
 
@@ -63,7 +63,7 @@ export default function About() {
         <div className="glass-card values-card">
           <h2>Our Values</h2>
           <div className="values-grid">
-            {t.aboutUs.ourValues.map((value: any, index: number) => (
+            {t.aboutUs.ourValues.map((value: { valueName: string; value: string }, index: number) => (
               <div key={index} className="value-item">
                 <h3>{value.valueName}</h3>
                 <p>{value.value}</p>
