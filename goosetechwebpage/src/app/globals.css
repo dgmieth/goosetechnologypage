@@ -949,7 +949,6 @@ main {
   font-weight: 400;
   opacity: 0.9;
   transition: opacity 0.3s ease;
-  padding-left: 0.75rem;
 }
 
 .footer-links a:hover {
@@ -1035,6 +1034,10 @@ main {
   .footer-content {
     text-align: left;
     align-items: flex-start;
+  }
+
+  .footer-links a {
+    padding-left: 0.75rem;
   }
 
   /* Keep hero-inner as a single centered column (content overlays the image).
@@ -1185,5 +1188,78 @@ button:focus,
   .page-content {
     box-shadow: none;
     border: 1px solid #ccc;
+  }
+}
+
+/* Contact Page Styles */
+.contact-page {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(108, 51, 215, 0.15) 0%, rgba(44, 123, 229, 0.15) 50%, rgba(6, 193, 214, 0.15) 100%);
+  border-radius: 16px;
+}
+
+.contact-container {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+  background: linear-gradient(135deg, #0066cc 0%, #00a8cc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #0066cc 0%, #00a8cc 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 102, 204, 0.4);
+}
+
+.contact-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 850px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-description {
+    font-size: 1rem;
+  }
+
+  .contact-button {
+    padding: 0.875rem 1.75rem;
+    font-size: 0.95rem;
   }
 }

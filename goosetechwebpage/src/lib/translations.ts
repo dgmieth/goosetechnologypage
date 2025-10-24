@@ -67,22 +67,10 @@ export const translations = {
     },
     contact: {
       title: 'Entre em Contato',
-      description: 'Gostaríamos de ouvir você!',
-      form: {
-        name: 'Nome',
-        email: 'Email',
-        subject: 'Assunto',
-        message: 'Mensagem',
-        submit: 'Enviar',
-        sending: 'Enviando...',
-        success: 'Mensagem enviada com sucesso!',
-        error: 'Erro ao enviar mensagem. Tente novamente.'
-      },
-      info: {
-        email: 'Email',
-        phone: 'Telefone',
-        location: 'Localização'
-      }
+      description: 'A Goose está sempre à disposição para ajudar você',
+      emailButton: 'Enviar Email',
+      emailSubject: 'Contato via goosetchnology.com webpage',
+      emailBody: 'Boa tarde, \nEstou entrando em contato em referência a '
     },
   },
   'en-us': {
@@ -152,22 +140,10 @@ export const translations = {
     },
     contact: {
       title: 'Get in Touch',
-      description: 'We\'d love to hear from you!',
-      form: {
-        name: 'Name',
-        email: 'Email',
-        subject: 'Subject',
-        message: 'Message',
-        submit: 'Send',
-        sending: 'Sending...',
-        success: 'Message sent successfully!',
-        error: 'Error sending message. Please try again.'
-      },
-      info: {
-        email: 'Email',
-        phone: 'Phone',
-        location: 'Location'
-      }
+      description: 'Goose is always available to help you',
+      emailButton: 'Send Email',
+      emailSubject: 'Contact via goosetchnology.com webpage',
+      emailBody: 'Good afternoon, \nI am contacting you in reference to '
     },
   },
   'fr-ca': {
@@ -237,22 +213,10 @@ export const translations = {
     },
     contact: {
       title: 'Nous Contacter',
-      description: 'Nous aimerions vous entendre!',
-      form: {
-        name: 'Nom',
-        email: 'Email',
-        subject: 'Sujet',
-        message: 'Message',
-        submit: 'Envoyer',
-        sending: 'Envoi en cours...',
-        success: 'Message envoyé avec succès!',
-        error: 'Erreur lors de l\'envoi du message. Réessayez.'
-      },
-      info: {
-        email: 'Email',
-        phone: 'Téléphone',
-        location: 'Localisation'
-      }
+      description: 'Goose est toujours à votre disposition pour vous aider',
+      emailButton: 'Envoyer un Email',
+      emailSubject: 'Contact via goosetchnology.com webpage',
+      emailBody: 'Bonsoir, \nJe vous contacte en référence à '
     },
   },
   'es-mx': {
@@ -322,22 +286,10 @@ export const translations = {
     },
     contact: {
       title: 'Contáctanos',
-      description: '¡Nos encantaría escucharte!',
-      form: {
-        name: 'Nombre',
-        email: 'Email',
-        subject: 'Asunto',
-        message: 'Mensaje',
-        submit: 'Enviar',
-        sending: 'Enviando...',
-        success: '¡Mensaje enviado con éxito!',
-        error: 'Error al enviar el mensaje. Intenta de nuevo.'
-      },
-      info: {
-        email: 'Email',
-        phone: 'Teléfono',
-        location: 'Ubicación'
-      }
+      description: 'Goose siempre está disponible para ayudarte',
+      emailButton: 'Enviar Email',
+      emailSubject: 'Contacto via goosetchnology.com webpage',
+      emailBody: 'Buenas tardes, \nMe estoy comunicando en referencia a '
     },
   },
 } as const
@@ -385,20 +337,8 @@ export interface Translations {
   contact: {
     title: string;
     description: string;
-    form: {
-      name: string;
-      email: string;
-      subject: string;
-      message: string;
-      submit: string;
-      sending: string;
-      success: string;
-      error: string;
-    };
-    info: {
-      email: string;
-      phone: string;
-      location: string;
-    };
+    emailButton: string;
+    emailSubject: string;
+    emailBody: string;
   };
 }
