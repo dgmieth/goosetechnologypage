@@ -2,6 +2,7 @@
 import { Metadata } from 'next'
 import { Locale, getTranslation } from '@/lib/translations'
 import Link from 'next/link'
+import '../home.css'
 
 export async function generateMetadata({
   params,
