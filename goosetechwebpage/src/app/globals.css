@@ -456,7 +456,6 @@ main {
 }
 
 .home-text .hero-title {
-  color: var(--secondary-color);
   text-shadow: none;
   margin-bottom: 1rem;
 }
@@ -565,9 +564,11 @@ main {
 .hero-title {
   font-size: clamp(1.6rem, 4vw, 2.6rem);
   margin-bottom: 1rem;
-  /* title should not have a heavy shadow so it renders crisp on the background */
-  text-shadow: none;
-  color: #ffffff; /* ensure title is white over the hero background */
+  font-weight: 700;
+  background: linear-gradient(135deg, #0066cc 0%, #00a8cc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero-lead {
@@ -653,13 +654,24 @@ main {
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
-  background: var(--primary-color);
+  background: linear-gradient(135deg, #0066cc 0%, #00a8cc 100%);
   color: white;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
   font-weight: 600;
-  border: 2px solid var(--primary-color);
   cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 102, 204, 0.4);
+}
+
+.btn:active {
+  transform: translateY(0);
 }
 /* placeholder icon sizing for not-found page */
 .placeholder-icon {

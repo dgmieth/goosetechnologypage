@@ -36,9 +36,9 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
 
             <div className="about-section">
               <p>{t.home.story}</p>
+              <p>{t.home.features}</p>
             </div>
 
-            <p className="muted">{t.home.features}</p>
             <p className="hero-mission">{t.home.mission}</p>
 
             <div className="hero-cta">

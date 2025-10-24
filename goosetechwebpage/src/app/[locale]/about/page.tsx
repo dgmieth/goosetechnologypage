@@ -25,7 +25,7 @@ export default function About() {
           />
           <div className="hero-overlay"></div>
           <div className="hero-content">
-            <h1>About Goose</h1>
+            <h1>{t.aboutUs.pageTitle}</h1>
           </div>
         </div>
 

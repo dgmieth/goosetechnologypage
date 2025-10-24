@@ -20,7 +20,7 @@ export const translations = {
       description: 'Descubra nossos aplicativos incríveis',
       cta: 'Explorar Aplicativos',
       headline: 'Aplicativos que fazem você voar mais alto.',
-      lead: 'Na Goose, acreditamos que tecnologia boa é aquela que melhora a vida de verdade — economiza tempo, simplifica o dia a dia e traz mais liberdade.',
+      lead: 'Na Goose Tecnologia, acreditamos que tecnologia boa é aquela que melhora a vida de verdade — economiza tempo, simplifica o dia a dia e traz mais liberdade.',
       story: 'Assim como o ganso que migra em busca de melhores condições, criamos aplicativos que ajudam você a migrar para uma vida melhor.',
       features: 'Mais leve, mais prática, mais conectada com o que realmente importa.',
       mission: 'Estamos construindo ferramentas que fazem a diferença — aqui, agora e todos os dias.',
@@ -31,19 +31,20 @@ export const translations = {
       cta: 'Voltar ao Início',
     },
     aboutUs: {
+      pageTitle: 'Sobre Goose Tecnologia',
       ourStory: {
         title: 'Nossa história',
         content: [
-          'A Goose nasceu em Montreal, a partir do encontro de dois imigrantes que chegaram aqui em 2022 em busca de novas oportunidades e de um recomeço.',
+          'A Goose Tecnologia nasceu em Montreal, a partir do encontro de dois imigrantes que chegaram aqui em 2022 em busca de novas oportunidades e de um recomeço.',
           'Entre conversas, ideias e afinidades, descobriram que suas experiências e habilidades se completavam — e que, juntos, poderiam criar algo capaz de facilitar a vida de muitas pessoas.',
-          'Assim surgiu a Goose: inspirada pelo movimento, pela adaptação e pela busca constante por melhores caminhos — valores que também vivem no símbolo que escolhemos para nos representar.'
+          'Assim surgiu a Goose Tecnologia: inspirada pelo movimento, pela adaptação e pela busca constante por melhores caminhos — valores que também vivem no símbolo que escolhemos para nos representar.'
         ]
       },
       ourMission: {
         title: 'Missão',
         content: [
           'Criar tecnologia que realmente faça diferença na vida das pessoas — economizando tempo, simplificando o cotidiano e trazendo mais liberdade.',
-          'Cada aplicativo da Goose nasce com propósito: ajudar você a migrar para uma vida melhor, mais leve e conectada com o que importa.'
+          'Cada aplicativo da Goose Tecnologia nasce com propósito: ajudar você a migrar para uma vida melhor, mais leve e conectada com o que importa.'
         ]
       },
       ourVision: {
@@ -67,7 +68,7 @@ export const translations = {
     },
     contact: {
       title: 'Entre em Contato',
-      description: 'A Goose está sempre à disposição para ajudar você',
+      description: 'A Goose Tecnologia está sempre à disposição para ajudar você',
       emailButton: 'Enviar Email',
       emailSubject: 'Contato via goosetchnology.com webpage',
       emailBody: 'Boa tarde, \nEstou entrando em contato em referência a '
@@ -93,7 +94,7 @@ export const translations = {
       description: 'Discover our amazing apps',
       cta: 'Explore Apps',
       headline: 'Apps that help you fly higher.',
-      lead: 'At Goose, we believe that good technology truly improves life — it saves time, simplifies your day, and gives you more freedom.',
+      lead: 'At Goose Technology, we believe that good technology truly improves life — it saves time, simplifies your day, and gives you more freedom.',
       story: 'Just like the goose that migrates in search of better conditions, we build apps that help you migrate toward a better life.',
       features: 'Lighter, simpler, and more connected to what really matters.',
       mission: 'We’re building tools that make a difference — here, now, and every day.',
@@ -104,19 +105,20 @@ export const translations = {
       cta: 'Back to Home',
     },
     aboutUs: {
+      pageTitle: 'About Goose Technology',
       ourStory: {
         title: 'Our Story',
         content: [
-          'Goose was born in Montreal from the meeting of two immigrants who arrived here in 2022 in search of new opportunities and a fresh start.',
+          'Goose Technology was born in Montreal from the meeting of two immigrants who arrived here in 2022 in search of new opportunities and a fresh start.',
           'Through conversations, ideas, and affinities, they discovered that their experiences and skills complemented each other — and that together, they could create something capable of making life easier for many people.',
-          'Thus, Goose was born: inspired by movement, adaptation, and the constant search for better paths — values that also live in the symbol we chose to represent us.'
+          'Thus, Goose Technology was born: inspired by movement, adaptation, and the constant search for better paths — values that also live in the symbol we chose to represent us.'
         ]
       },
       ourMission: {
         title: 'Mission',
         content: [
           'To create technology that truly makes a difference in people’s lives — saving time, simplifying daily life, and bringing more freedom.',
-          'Every Goose app is born with a purpose: to help you migrate to a better, lighter life connected to what matters.'
+          'Every Goose Technology app is born with a purpose: to help you migrate to a better, lighter life connected to what matters.'
         ]
       },
       ourVision: {
@@ -140,7 +142,7 @@ export const translations = {
     },
     contact: {
       title: 'Get in Touch',
-      description: 'Goose is always available to help you',
+      description: 'Goose Technology is always available to help you',
       emailButton: 'Send Email',
       emailSubject: 'Contact via goosetchnology.com webpage',
       emailBody: 'Good afternoon, \nI am contacting you in reference to '
@@ -166,7 +168,7 @@ export const translations = {
       description: 'Découvrez nos applications fantastiques',
       cta: 'Explorer les Applications',
       headline: 'Des applications qui vous font voler plus haut.',
-      lead: 'Chez Goose, nous croyons qu’une bonne technologie est celle qui améliore vraiment la vie — elle fait gagner du temps, simplifie le quotidien et offre plus de liberté.',
+      lead: 'Chez Goose Technologie, nous croyons qu\'une bonne technologie est celle qui améliore vraiment la vie — elle fait gagner du temps, simplifie le quotidien et offre plus de liberté.',
       story: 'Comme l’oie qui migre à la recherche de meilleures conditions, nous créons des applications qui vous aident à migrer vers une vie meilleure.',
       features: 'Plus légère, plus simple, plus connectée à l’essentiel.',
       mission: 'Nous construisons des outils qui font la différence — ici, maintenant et chaque jour.',
@@ -177,19 +179,20 @@ export const translations = {
       cta: 'Retour à l\'accueil',
     },
     aboutUs: {
+      pageTitle: 'À Propos de Goose Technologie',
       ourStory: {
         title: 'Notre histoire',
         content: [
-          'Goose est née à Montréal de la rencontre de deux immigrants arrivés ici en 2022 à la recherche de nouvelles opportunités et d’un nouveau départ.',
+          'Goose Technologie est née à Montréal de la rencontre de deux immigrants arrivés ici en 2022 à la recherche de nouvelles opportunités et d\'un nouveau départ.',
           'À travers des conversations, des idées et des affinités, ils ont découvert que leurs expériences et compétences se complétaient — et qu’ensemble, ils pouvaient créer quelque chose capable de faciliter la vie de nombreuses personnes.',
-          'Ainsi, Goose est née : inspirée par le mouvement, l’adaptation et la recherche constante de meilleurs chemins — des valeurs qui vivent également dans le symbole que nous avons choisi pour nous représenter.'
+          'Ainsi, Goose Technologie est née : inspirée par le mouvement, l\'adaptation et la recherche constante de meilleurs chemins — des valeurs qui vivent également dans le symbole que nous avons choisi pour nous représenter.'
         ]
       },
       ourMission: {
         title: 'Mission',
         content: [
           'Créer une technologie qui fait vraiment une différence dans la vie des gens — en économisant du temps, en simplifiant le quotidien et en apportant plus de liberté.',
-          'Chaque application Goose naît avec un objectif : vous aider à migrer vers une vie meilleure, plus légère et connectée à ce qui compte.'
+          'Chaque application Goose Technologie naît avec un objectif : vous aider à migrer vers une vie meilleure, plus légère et connectée à ce qui compte.'
         ]
       },
       ourVision: {
@@ -213,7 +216,7 @@ export const translations = {
     },
     contact: {
       title: 'Nous Contacter',
-      description: 'Goose est toujours à votre disposition pour vous aider',
+      description: 'Goose Technologie est toujours à votre disposition pour vous aider',
       emailButton: 'Envoyer un Email',
       emailSubject: 'Contact via goosetchnology.com webpage',
       emailBody: 'Bonsoir, \nJe vous contacte en référence à '
@@ -239,7 +242,7 @@ export const translations = {
       description: 'Descubre nuestras aplicaciones increíbles',
       cta: 'Explorar Aplicaciones',
       headline: 'Aplicaciones que te hacen volar más alto.',
-      lead: 'En Goose, creemos que la buena tecnología es la que realmente mejora la vida — ahorra tiempo, simplifica el día a día y brinda más libertad.',
+      lead: 'En Goose Tecnología, creemos que la buena tecnología es la que realmente mejora la vida — ahorra tiempo, simplifica el día a día y brinda más libertad.',
       story: 'Como el ganso que migra en busca de mejores condiciones, creamos aplicaciones que te ayudan a migrar hacia una vida mejor.',
       features: 'Más ligera, más práctica, más conectada con lo que realmente importa.',
       mission: 'Estamos construyendo herramientas que marcan la diferencia — aquí, ahora y cada día.',
@@ -250,19 +253,20 @@ export const translations = {
       cta: 'Volver al inicio',
     },
     aboutUs: {
+      pageTitle: 'Acerca de Goose Tecnología',
       ourStory: {
         title: 'Nuestra historia',
         content: [
-          'Goose nació en Montreal del encuentro de dos imigrantes que llegaron aquí en 2022 en busca de nuevas oportunidades y un nuevo comienzo.',
+          'Goose Tecnología nació en Montreal del encuentro de dos imigrantes que llegaron aquí en 2022 en busca de nuevas oportunidades y un nuevo comienzo.',
           'A través de conversaciones, ideas y afinidades, descubrieron que sus experiencias y habilidades se complementaban — y que juntos, podían crear algo capaz de facilitar la vida de muchas personas.',
-          'Así nació Goose: inspirada por el movimiento, la adaptación y la búsqueda constante de mejores caminos — valores que también viven en el símbolo que elegimos para representarnos.'
+          'Así nació Goose Tecnología: inspirada por el movimiento, la adaptación y la búsqueda constante de mejores caminos — valores que también viven en el símbolo que elegimos para representarnos.'
         ]
       },
       ourMission: {
         title: 'Misión',
         content: [
           'Crear tecnología que realmente haga una diferencia en la vida de las personas — ahorrando tiempo, simplificando la vida cotidiana y trayendo más libertad.',
-          'Cada aplicación de Goose nace con un propósito: ayudarte a migrar hacia una vida mejor, más ligera y conectada con lo que importa.'
+          'Cada aplicación de Goose Tecnología nace con un propósito: ayudarte a migrar hacia una vida mejor, más ligera y conectada con lo que importa.'
         ]
       },
       ourVision: {
@@ -286,7 +290,7 @@ export const translations = {
     },
     contact: {
       title: 'Contáctanos',
-      description: 'Goose siempre está disponible para ayudarte',
+      description: 'Goose Tecnología siempre está disponible para ayudarte',
       emailButton: 'Enviar Email',
       emailSubject: 'Contacto via goosetchnology.com webpage',
       emailBody: 'Buenas tardes, \nMe estoy comunicando en referencia a '
@@ -329,6 +333,25 @@ export interface Translations {
     title: string;
     message: string;
     cta: string;
+  };
+  aboutUs: {
+    pageTitle: string;
+    ourStory: {
+      title: string;
+      content: string[];
+    };
+    ourMission: {
+      title: string;
+      content: string[];
+    };
+    ourVision: {
+      title: string;
+      content: string[];
+    };
+    ourValues: Array<{
+      valueName: string;
+      value: string;
+    }>;
   };
   products: {
     title: string;
