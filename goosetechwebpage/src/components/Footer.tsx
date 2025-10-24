@@ -33,7 +33,7 @@ export default function Footer({ locale }: { locale: Locale }) {
               {products.map((product) => (
                 <li key={product.id}>
                   <Link href={`/${locale}/products/${product.id}`}>
-                    {product.name}
+                    {product.names[locale]}
                   </Link>
                 </li>
               ))}

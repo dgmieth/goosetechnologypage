@@ -10,7 +10,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: Locale; productId: string }>
 }): Promise<Metadata> {
-  const { productId } = await params
+  const { locale, productId } = await params
   const product = products.find((p) => p.id === productId)
 
   if (!product) {
@@ -20,11 +20,11 @@ export async function generateMetadata({
   }
 
   return {
-    title: product.name,
-    description: product.description,
+    title: product.names[locale],
+    description: product.descriptions[locale],
     openGraph: {
-      title: product.name,
-      description: product.description,
+      title: product.names[locale],
+      description: product.descriptions[locale],
     },
   }
 }
@@ -50,12 +50,12 @@ export default async function ProductDetail({
       
       <div className="product-detail">
         <div className="product-detail-icon">{product.icon}</div>
-        <h1>{product.name}</h1>
-        <p className="product-detail-description">{product.description}</p>
+        <h1>{product.names[locale]}</h1>
+        <p className="product-detail-description">{product.descriptions[locale]}</p>
         
         <div className="product-detail-content">
           <p>
-            Bem-vindo ao {product.name}! Esta página será preenchida com mais detalhes sobre o aplicativo em breve.
+            Bem-vindo ao {product.names[locale]}! Esta página será preenchida com mais detalhes sobre o aplicativo em breve.
           </p>
         </div>
       </div>
