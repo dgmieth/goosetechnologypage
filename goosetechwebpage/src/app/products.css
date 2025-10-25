@@ -1,11 +1,23 @@
 /* Products Page Styles */
 
+.page-content h1 {
+  background: linear-gradient(135deg, #0066cc 0%, #00a8cc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: 2rem;
-  max-width: 100%;
+  margin: 2rem auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .product-card-link {
@@ -81,7 +93,7 @@
 /* Product Detail Page */
 .back-link {
   display: inline-block;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: var(--primary-color);
   font-weight: 500;
   transition: all 0.3s ease;
@@ -93,7 +105,7 @@
 
 .product-detail {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .product-detail-icon {
@@ -108,25 +120,198 @@
   margin-bottom: 1rem;
 }
 
+/* Carousel */
+.product-carousel {
+  position: relative;
+  width: calc(100% - 80px);
+  margin: 20px 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(108, 51, 215, 0.1) 0%, rgba(44, 123, 229, 0.1) 50%, rgba(6, 193, 214, 0.1) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 102, 204, 0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.product-carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.1) 0%,
+    rgba(139, 92, 246, 0.1) 100%
+  );
+  border-radius: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.product-carousel:hover {
+  background: linear-gradient(135deg, rgba(108, 51, 215, 0.1) 0%, rgba(44, 123, 229, 0.1) 50%, rgba(6, 193, 214, 0.1) 100%);
+  border-color: rgba(0, 102, 204, 0.2);
+}
+
+.product-carousel:hover::after {
+  opacity: 0;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 102, 204, 0.7);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 102, 204, 0.9);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn-prev {
+  left: 1rem;
+}
+
+.carousel-btn-next {
+  right: 1rem;
+}
+
+/* Indicators */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 0.75rem 1.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  border-radius: 50px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 102, 204, 0.4);
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: rgba(0, 102, 204, 0.9);
+  border-color: rgba(0, 102, 204, 0.9);
+}
+
+.indicator:hover {
+  border-color: rgba(0, 102, 204, 0.6);
+}
+
+/* Product Detail Glass Card Wrapper */
+.glassCard {
+  background: linear-gradient(135deg, rgba(108, 51, 215, 0.15) 0%, rgba(44, 123, 229, 0.15) 50%, rgba(6, 193, 214, 0.15) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto 2rem;
+  max-width: 800px;
+}
+
+.glassCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+
+.glassCard:hover::before {
+  left: 100%;
+}
+
+/* Product Detail Header Card */
+.product-detail-header {
+  padding: 40px 40px 10px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.product-detail-header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #0066cc 0%, #00a8cc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  font-weight: 700;
+}
+
 .product-detail-description {
-  font-size: 1.2rem;
-  color: var(--text-secondary);
-  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #333333;
+  opacity: 1;
+  margin: 0 auto;
+  line-height: 1.2;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  font-weight: 500;
 }
 
 .product-detail-content {
-  background: var(--bg-light);
-  padding: 2rem;
-  border-radius: 8px;
-  margin-top: 2rem;
+  background: transparent;
+  padding: 10px 40px 40px;
+  border-radius: 0;
+  margin-top: 0;
   color: var(--text-secondary);
   line-height: 1.8;
-  max-width: 800px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 1;
 }
 
 /* Responsive Design */
@@ -151,5 +336,53 @@
 
   .product-icon {
     font-size: 2.5rem;
+  }
+}
+
+/* Product Detail Buttons */
+.product-buttons-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.product-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #0066cc 0%, #00a8cc 100%);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+.product-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 102, 204, 0.4);
+  text-decoration: none;
+  color: white;
+}
+
+.product-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive: Desktop side by side, Mobile stacked */
+@media (max-width: 768px) {
+  .product-buttons-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .product-btn {
+    width: 100%;
+    text-align: center;
   }
 }
